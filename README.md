@@ -50,7 +50,7 @@ This project will require front-end and back-end development.
 #### Languages
 Likely mostly Python.
 
-#### Customer end-point
+#### User end-point
 The customer will interact with our program with some sort of deployed, web-based end point. We could make this either a web page, or an app. Another idea, depending on if we actually need to build the front end is to have the user interact with this program by tagging it in a tweet. With this approach, we would have our application scan for mentions every x minutes and use that tweet to build the query. This would be cool because it uses Twitter's existing front-end and would provide a central location for fans to connect with each other and see past results.
 
 _Example 1: The user opens and app and sees a search bar with two fields. The first field has a drop down for cities, the second prompts for a team name. Once the user submits a query, it will display the results in a table._
