@@ -47,6 +47,9 @@ Must use at least one of the following Twitter API v2 endpoints;
 
 This project will require front-end and back-end development. 
 
+#### Languages
+Likely mostly Python.
+
 #### Customer end-point
 The customer will interact with our program with some sort of deployed, web-based end point. We could make this either a web page, or an app. Another idea, depending on if we actually need to build the front end is to have the user interact with this program by tagging it in a tweet. With this approach, we would have our application scan for mentions every x minutes and use that tweet to build the query. This would be cool because it uses Twitter's existing front-end and would provide a central location for fans to connect with each other and see past results.
 
@@ -68,15 +71,14 @@ Once we have a decently sized search set, we can find restaurants and bars by di
 This will take in a either raw data or a pre-formatted response and either post a response in Twitter or on our app.
 
 
-### Activity Diagram
+### Sequence Diagram
 
 ### Component Diagram
 
 ### TODO
-
+#### Design
 #### Font-end
--[ ]
--[ ]
 #### Back-end
--[ ]
--[ ]
+#### Deployment
+#### Testing
+
