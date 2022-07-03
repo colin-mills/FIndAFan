@@ -50,9 +50,23 @@ This project will require front-end and back-end development.
 #### Customer end-point
 The customer will interact with our program with some sort of deployed, web-based end point. We could make this either a web page, or an app. Another idea, depending on if we actually need to build the front end is to have the user interact with this program by tagging it in a tweet. With this approach, we would have our application scan for mentions every x minutes and use that tweet to build the query. This would be cool because it uses Twitter's existing front-end and would provide a central location for fans to connect with each other and see past results.
 
-_Example 1: The user opens and app and sees a search bar with two fields. The first field has a drop down for cities, the second prompts for a team name. Once the user submits a query, it will display the results in a table.
+_Example 1: The user opens and app and sees a search bar with two fields. The first field has a drop down for cities, the second prompts for a team name. Once the user submits a query, it will display the results in a table._
 
-_Example 2: The user posts this tweet, "Hey @Find-a-fan I am in NYC looking to catch the Broncos NFL game, can you help a guy out?" A few minutes later a response to this tweet will come from our twitter page with the best 5 places to catch the game. 
+_Example 2: The user posts this tweet, "Hey @Find-a-fan I am in NYC looking to catch the Broncos NFL game, can you help a guy out?" A few minutes later a response to this tweet will come from our twitter page with the best 5 places to catch the game._
+
+#### Query Listener
+Regardless of the front-end UI, we will need some program to be periodically scanning or listening for a query to be submitted. Once this is triggered it could pass off the information to the query runner in a new thread.
+
+#### Query Runner
+This will take in the query information from the listener, build a new API rest query (or a series of them), and send out the request(s). It will receive this data, analyze it, format it, and pass it off to our Query Response class.
+
+This will be the meat of our program here. I imagine there won't be too much data directly mentioning both the exact name of a sports team **and** a restaurant. To find more tweets related to a sports team I think we should design some sort of fuzzy search function that compiles a dictionary of words that could be related to the team. For example, it would populate with the team name, mascot, close mis-spellings or other slang, and even players' and coachs' names. We will use geolocation to restrict the location of these tweets to radius around a metro area.
+
+Once we have a decently sized search set, we can find restaurants and bars by direct mentions, tags, or even geo-location hot spots.
+
+#### Query Response
+This will take in a either raw data or a pre-formatted response and either post a response in Twitter or on our app.
+
 
 ### Activity Diagram
 
