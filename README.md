@@ -1,7 +1,7 @@
 # FInd-A-Fan
 Hackathon project for the Chirp Developer Challenge
 
-## Problem
+## [Problem](https://chirpdevchallenge.devpost.com/?utm_source=devpost&utm_medium=alert&utm_campaign=20220624_allinterest)
 
 Help us unlock new experiences for people on Twitter, and inspire other developers. We want to push the boundaries of what’s possible with our platform. We need your help to bring to life the experiences that will define this new frontier.
 
