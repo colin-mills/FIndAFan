@@ -13,7 +13,7 @@ Build an app using the Twitter API v2 in one of the following categories:
 
 ## Proposal 
 
-Have you ever been on a trip, away from your home-base bar, while your team is playing in a big game? Or maybe you are just new and town and looking for a bar with comrade fans as crazy as you are. Either way, what you are missing is our Find-a-fan twitter service. 
+Have you ever been on a trip, away from your home-base bar, while your team is playing in a big game? Or maybe you are just new in town and looking for a bar with fellow fans as crazy as you are. Either way, what you are missing is our Find-a-fan twitter service. 
 
 This application will be designed to query Twitter's tweets and metadata to find you the best restarants and bars to catch the game with fellow fans. You provide it with a city and a sports team and we do the rest.
 
@@ -68,7 +68,7 @@ This will be the meat of our program here. I imagine there won't be too much dat
 Once we have a decently sized search set, we can find restaurants and bars by direct mentions, tags, or even geo-location hot spots.
 
 #### Query Response
-This will take in a either raw data or a pre-formatted response and either post a response in Twitter or on our app.
+This will take in either a raw data or a pre-formatted response and post a response in Twitter or on our app.
 
 
 ### Sequence Diagram
